@@ -14,6 +14,12 @@ export default function Home() {
         <img src={session?.user?.image} alt="" className="w-10 h-10"/>
         </div>
       </div>
+      <div className={'bg-indigo-900 w-screen h-screen flex items-center'}>
+      <div className="text-center w-full">
+        <button onClick={()=>signIn('google')} className='bg-white p-2 px-4 rounded-lg'>Login With Google</button>
+        
+        </div>
+    </div>
     </Layout> 
     )
   }
